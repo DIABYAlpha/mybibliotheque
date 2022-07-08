@@ -1,0 +1,27 @@
+<div class="container mt-4 mb-4">
+    <h1 class="text-center text-info mt-4 mb-3">Ajouter un livre !</h1>
+    <form (ngSubmit)="saveLivre(livre)"  #livre="ngForm" >
+        <div class="mb-3">
+            <label class="form-label">Titre</label>
+            <input type="text" name="titre" class="form-control" ngModel recquired >
+            
+        </div>
+        <div class="mb-3">
+            <label  class="form-label">Auteur</label>
+            <input type="text" name="auteur" class="form-control" ngModel recquired  >
+        </div>
+        <div class="mb-3">
+            <label  class="form-label">Genre</label>
+            <input type="text" name="genre" class="form-control" ngModel recquired  >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">image</label>
+            <input type="text" name="image" class="form-control" ngModel recquired>
+        </div>
+        <div class="mb-3">
+            <label  class="form-label">Price</label>
+            <input type="number" name="price" class="form-control" ngModel recquired  >
+        </div>
+        <button type="submit" class="btn btn-primary">Enregister</button>
+    </form>
+</div>
